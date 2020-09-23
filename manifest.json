@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "BotãoDownload",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "css": [
+                "style.css"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "16": "icon.png"
+    }
+}
