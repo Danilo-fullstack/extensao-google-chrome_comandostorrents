@@ -4,7 +4,16 @@ var adblock_detect = document.querySelector(".adblock_detect").style.display = "
 
 // var classCSS = document.querySelectorAll('.cf')
 
-var demoClasses = document.querySelector(".entry-content div").style.display = "block"
-console.log(document.querySelector(".entry-content div"))
+// var demoClasses = document.querySelectorAll(".entry-content p").style.display = "block"
+// console.log(document.querySelectorAll(".entry-content p"))
+
+
+const demoClasses = document.querySelectorAll('.entry-content p');
+
+demoClasses.forEach(element => {
+  element.style.display = "block";
+});
+
+demoClasses[0];
 
 
